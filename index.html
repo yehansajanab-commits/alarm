@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speaker Control Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🔊 Speaker Control Dashboard</h1>
+  <p id="status">Connecting to MQTT...</p>
+
+  <div class="container">
+    <div class="speaker" data-id="1">
+      <h2>Speaker 1</h2>
+      <button class="play">PLAY</button>
+      <button class="stop">STOP</button>
+    </div>
+
+    <div class="speaker" data-id="2">
+      <h2>Speaker 2</h2>
+      <button class="play">PLAY</button>
+      <button class="stop">STOP</button>
+    </div>
+
+    <div class="speaker" data-id="3">
+      <h2>Speaker 3</h2>
+      <button class="play">PLAY</button>
+      <button class="stop">STOP</button>
+    </div>
+
+    <div class="speaker" data-id="4">
+      <h2>Speaker 4</h2>
+      <button class="play">PLAY</button>
+      <button class="stop">STOP</button>
+    </div>
+  </div>
+
+  <!-- MQTT.js (browser version) -->
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
