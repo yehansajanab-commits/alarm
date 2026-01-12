@@ -7,7 +7,7 @@
    ========================================================= */
 
 // MQTT WebSocket URL (matches ESP32 broker)
-const MQTT_URL = "ws://test.mosquitto.org:8080/mqtt";
+const MQTT_URL = "wss://test.mosquitto.org:8081/mqtt";
 
 // Connect to MQTT broker (no username/password)
 const client = mqtt.connect(MQTT_URL);
@@ -65,3 +65,4 @@ function sendCommand(speakerId, command) {
 
   console.log(`📢 Sent ${command} → ${topic}`);
 }
+
